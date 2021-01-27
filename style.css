@@ -219,3 +219,40 @@
     font-weight: 500;
     color: #3f8ffc;
 }
+
+.contact {
+    padding: 100px;
+    background: #162c3b;
+    text-align: center;
+}
+
+.imgBx2 {
+    background: url(./images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.redbg {
+    background: url(./images/red.jpg) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.form .inputBx {
+    margin-bottom: 40px;
+}
+
+.form .inputBx input {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
