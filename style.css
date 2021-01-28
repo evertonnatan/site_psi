@@ -17,6 +17,58 @@ header {
     align-items: center;
     transition: 0.6s;
     padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 900px;
+    transition: 0.6s;
+}
+
+header ul li a.active,
+header ul li a:hover{
+    color: #fff;
+    background: #D71434;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
 }
 
 .banner {
@@ -56,11 +108,11 @@ header {
 }
 
 .banner header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -342,7 +394,8 @@ header {
         padding: 50px;
     }
     .banner header {
-        padding: 20px 50px;
+        position: fixed;
+        padding: 12px 50px;
     }
     .banner .content h2 {
         font-size: 36px;
