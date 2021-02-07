@@ -1,169 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicóloga Josiane</title>
+    <title>Portfolio Josi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Banner -->
-    <div class="banner">
-        <nav>
-            <header>
-                <a href="#" class="logo">Psicóloga Josiane Silva</a>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </header>
-        </nav>
-        <img src="./images/bg.jpg" alt="Imagem de background">
-        <div class="content">
-            <h2>Sucess by Psique</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo neque reprehenderit accusantium, cum facere illo possimus? Incidunt facilis sit beatae aspernatur cumque adipisci, similique, perspiciatis nemo, placeat deserunt unde.</p>
-
+    <div class="menuToggle" onclick="ToggleMenu()"></div>
+    <div class="navigation">
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="#" onmouseenter="changeImage('./images/img1.jpg')">Home</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('./images/img2.jpg')">About</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('./images/img3.jpg')">Services</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('./images/img4.jpg')">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('./images/img5.jpg')">Contact</a>
+                </li>
+            </ul>
         </div>
-    </div>
-
-
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="contentBx">
-            <h2 class="heading">Sobre Mim</h2>
-            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br><br>Odit saepe temporibus tempora explicabo eaque consectetur et error quibusdam similique non! Iusto eligendi illo doloremque suscipit dolorem voluptatibus architecto ducimus. Architecto saepe ducimus maxime eum aperiam placeat similique, voluptas reprehenderit error optio excepturi ipsa eius quia tempora amet commodi facilis ratione cupiditate natus quibusdam aliquid quis quas? Debitis, quibusdam, voluptatum hic a, facere necessitatibus sint labore quam suscipit provident soluta voluptate fuga commodi temporibus eos quos? Aspernatur debitis ex rerum dicta deleniti molestiae, culpa provident sit quasi illo ipsum? Molestias obcaecati corrupti rerum deserunt ipsa! Esse ipsum iusto facere atque quasi!</p>
+        <div class="imgArea">
+            <img src="./images/img1.jpg" id="slider" alt="#">
         </div>
-        <div class="imgBx"></div>
-    </section>
-
-
-    <!--Services -->
-
-    <section class="services" id="services">
-        <h2 class="heading">Our Services</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti molestias amet delectus ut deleniti esse! Quae id ullam fuga sapiente quidem eveniet facere ipsum, error eum, corporis dolore beatae dolorum.</p>
-        <div class="container">
-            <div class="serviceBx">
-                <div>
-                    <img src="./images/icon1.png" alt="#">
-                    <h2>Design</h2>
-                </div>                
-            </div>
-            <div class="serviceBx">
-                <div>
-                    <img src="./images/icon2.png" alt="#">
-                    <h2>Design</h2>
-                </div>                
-            </div>
-            <div class="serviceBx">
-                <div>
-                    <img src="./images/icon3.png" alt="#">
-                    <h2>Design</h2>
-                </div>                
-            </div>
-        </div>
-    </section>
-
-
-
-    <!--Technology -->
-
-    <section class="technology" id="portfolio">
-        <div class="contentBx">
-            <h2 class="heading">We use cutting edge technology</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda at rem, numquam, temporibus doloremque beatae corporis est ea vel, dolor recusandae. Non commodi laboriosam doloribus deserunt veniam ut dolorem eius?</p>
-        </div>
-        <div class="imgBx">
-            <img src="./images/tech.png" alt="#">
-        </div>
-    </section>
-
-
-
-    <!-- Client -->
-
-    <section class="client">
-        <h2 class="heading">Our Clients</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui voluptas beatae eius vitae, ipsam non laudantium laborum eum quas hic ipsa quisquam dolores, error esse exercitationem sequi sapiente laboriosam aspernatur.</p>
-        <div class="imgBx">
-            <img src="./images/brand1.png" alt="#">
-            <img src="./images/brand2.png" alt="#">
-            <img src="./images/brand3.png" alt="#">
-            <img src="./images/brand4.png" alt="#">
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-
-    <section class="testimonials">
-        <h2 class="heading">What Our Client says</h2>
-        <div class="container">
-            <div class="contentBx">
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ducimus architecto dicta fuga facere sed quisquam repudiandae illo cupiditate alias vitae mollitia nulla, tempora est, itaque atque asperiores illum inventore?</p>
-                    <br>
-                    <h3>Someone Famous</h3>
-                </div>
-            </div>
-            <div class="contentBx">
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ducimus architecto dicta fuga facere sed quisquam repudiandae illo cupiditate alias vitae mollitia nulla, tempora est, itaque atque asperiores illum inventore?</p>
-                    <br>
-                    <h3>Someone Famous</h3>
-                </div>
-            </div>            
-        </div>
-    </section>
-
-
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Entre em contato</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus expedita odit quia est laudantium magni error explicabo qui velit, eaque earum recusandae in deserunt illum vel aliquam quam corporis?</p>
-    </section>
-
-    <section class="about">
-        <div class="contentBx redbg">
-            <div class="form">
-                <div class="inputBx">
-                    <input type="text" name="" placeholder="Digite seu nome">
-                </div>
-                <div class="inputBx">
-                    <input type="text" name="" placeholder="E-mail">
-                </div>
-                <div class="inputBx">
-                    <input type="text" name="" placeholder="Telefone">
-                </div>
-                <div class="inputBx">
-                    <textarea placeholder="Deixe sua mensagem"></textarea>
-                </div>
-                <div class="inputBx">
-                    <input type="submit" name="" value="Enviar">
-                </div>
-            </div>
-        </div>
-        <div class="imgBx2"></div>
-    </section>
-
-    <script type="text/javascript" src="scripts.js"></script>
-
-
-    <!-- Footer -->
-
-    <section class="footer">
-        <ul>
-            <p class="text">Siga-me nas Redes Sociais:</p>
-            <li><a href="#"><img src="./images/facebook.png" alt="#"></a></li>
-            <li><a href="#"><img src="./images/twitter.png" alt="#"></a></li>
-            <li><a href="#"><img src="./images/linkedin.png" alt="#"></a></li>
-        </ul>
-    </section>
-    
+    </div>  
+    <script src="scripts.js"></script>  
 </body>
 </html>
