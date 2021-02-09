@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Josi</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Josi</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="menuToggle" onclick="ToggleMenu()"></div>
-    <div class="navigation">
-        <div class="navArea">
-            <ul>
-                <li>
-                    <a href="#" onmouseenter="changeImage('./images/img1.jpg')">Home</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('./images/img2.jpg')">About</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('./images/img3.jpg')">Services</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('./images/img4.jpg')">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('./images/img5.jpg')">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="imgArea">
-            <img src="./images/img1.jpg" id="slider" alt="#">
-        </div>
-    </div> 
-    
-    <!-- == SERVICES == -->
 
-    
-    <script src="scripts.js"></script>  
+<div class="menuToggle" onclick="ToggleMenu()"></div>
+<div class="navigation">
+    <div class="navArea">
+        <ul>
+            <li>
+                <a href="#" onmouseenter="changeImage('./images/img1.jpg')">Home</a>
+            </li>
+            <li>
+                <a href="#" onmouseenter="changeImage('./images/img2.jpg')">About</a>
+            </li>
+            <li>
+                <a href="#services" onmouseenter="changeImage('./images/img3.jpg')">Services</a>
+            </li>
+            <li>
+                <a href="#" onmouseenter="changeImage('./images/img4.jpg')">Portfolio</a>
+            </li>
+            <li>
+                <a href="#" onmouseenter="changeImage('./images/img5.jpg')">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="imgArea">
+        <img src="./images/img1.jpg" id="slider" alt="#">
+    </div>
+</div> 
+
+<section class="services" id="services">
+    <div class="card">
+        <div class="imgBx">
+            <img src="./images/design.png" alt="">
+        </div>
+        <div class="content">
+            <div>
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui necessitatibus, assumenda magnam quo nulla vitae non, doloremque animi quae asperiores amet</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="./images/startup.png" alt="">
+        </div>
+        <div class="content">
+            <div>
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui necessitatibus, assumenda magnam quo nulla vitae non, doloremque animi quae asperiores amet</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="./images/money.png" alt="">
+        </div>
+        <div class="content">
+            <div>
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui necessitatibus, assumenda magnam quo nulla vitae non, doloremque animi quae asperiores amet</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="./images/data.png" alt="">
+        </div>
+        <div class="content">
+            <div>
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui necessitatibus, assumenda magnam quo nulla vitae non, doloremque animi quae asperiores amet</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="scripts.js"></script>  
 </body>
 </html>
